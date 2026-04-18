@@ -1,0 +1,32 @@
+// Version: 1.0.0
+type Data__791452850<K, V> =
+  {var count : Nat__490723111; kvs : [var ?(K, V)]};
+type GameId__669134594 = Text;
+type Game__117537377 =
+  {
+    category : Text;
+    description : Text;
+    embedUrl : Text;
+    id : GameId__669134594;
+    isFeatured : Bool;
+    isNew : Bool;
+    playCount : Nat;
+    rating : Float;
+    tags : [Text];
+    thumbnail : Text;
+    title : Text
+  };
+type Internal__8484328<K, V> =
+  {children : [var ?Node__46230540<K, V>]; data : Data__791452850<K, V>};
+type Leaf__809889148<K, V> = {data : Data__791452850<K, V>};
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Node__46230540<K, V> =
+  {#internal : Internal__8484328<K, V>; #leaf : Leaf__809889148<K, V>};
+actor {
+  stable games :
+    {
+      var root : Node__46230540<GameId__669134594, Game__117537377>;
+      var size : Nat__490723111
+    }
+};

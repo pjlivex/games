@@ -1,0 +1,24 @@
+type GameId = text;
+type Game = 
+ record {
+   category: text;
+   description: text;
+   embedUrl: text;
+   id: GameId;
+   isFeatured: bool;
+   isNew: bool;
+   playCount: nat;
+   rating: float64;
+   tags: vec text;
+   thumbnail: text;
+   title: text;
+ };
+service : {
+  getAllGames: () -> (vec Game) query;
+  getCategories: () -> (vec text) query;
+  getFeaturedGames: () -> (vec Game) query;
+  getGameById: (id: text) -> (opt Game) query;
+  getGamesByCategory: (category: text) -> (vec Game) query;
+  getNewGames: () -> (vec Game) query;
+  searchGames: (searchTerm: text) -> (vec Game) query;
+}

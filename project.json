@@ -1,0 +1,24 @@
+{
+  "overview": "A vibrant Poki-style browser game portal with 40+ HTML5 games, category browsing, search, featured games, and Google AdSense-ready ad placement slots.",
+  "features": [
+    "40+ embeddable HTML5 games organized by category",
+    "Homepage with hero section, featured games, and category grid",
+    "Action, Puzzle, Racing, Sports, Adventure, and Casual categories",
+    "Full-screen individual game pages with iframe embeds",
+    "Search and filter games by name or category",
+    "Google AdSense-ready ad slots (header banner, sidebar, in-content)",
+    "Vibrant colorful Poki-inspired design with animations",
+    "Fully mobile-responsive layout"
+  ],
+  "category": "games",
+  "tags": [
+    "games",
+    "arcade",
+    "html5",
+    "poki",
+    "game-portal",
+    "adsense",
+    "browser-games"
+  ],
+  "last_updated": "2026-04-18T21:12:04.384Z"
+}
